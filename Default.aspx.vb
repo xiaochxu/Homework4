@@ -25,12 +25,12 @@ Partial Class _Default
         'Calculate gross pay
         Dim g As Decimal
         g = W * H
-        gross.Text = g
+        gross.Text = g.ToString("#,###.##")
 
         'Calculate pre-tax income
         Dim pti As Decimal
         pti = g - ptd
-        PreTaxIncome.Text = pti
+        PreTaxIncome.Text = pti.ToString("#,###.##")
 
         'Calculate After-Tax Income
         Dim ati As Decimal
@@ -40,13 +40,13 @@ Partial Class _Default
         ElseIf g >= 500 Then
             ati = pti - pti * 0.22
         End If
-        AfterTaxIncome.Text = ati
+        AfterTaxIncome.Text = ati.ToString("#,###.##")
 
         'Calculte Netpay
 
         Dim net As Decimal
         net = ati - atd
-        NetPay.Text = "$" & net
+        NetPay.Text = "$" & net.ToString("#,###.##")
 
 
     End Sub

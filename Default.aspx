@@ -4,100 +4,124 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Mika's Salary Calculation</title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+</head>
+    
+<body>
     <style type="text/css">
-        .auto-style1 {
-            width: 33%;
-            height: 248px;
-        }
-        .auto-style2 {
-            height: 23px;
-        }
         .auto-style3 {
-            width: 127px;
+            width: 168px;
         }
         .auto-style4 {
             height: 23px;
-            width: 127px;
+            width: 168px;
         }
         .auto-style5 {
-            width: 127px;
-            height: 31px;
-        }
-        .auto-style6 {
+            width: 168px;
             height: 31px;
         }
         .auto-style7 {
-            width: 127px;
+            width: 168px;
             height: 34px;
+        }
+        #form1 {
+            margin-top: 15px;
         }
         .auto-style8 {
+            width: 166px;
             height: 34px;
         }
+        .auto-style9 {
+            height: 23px;
+            width: 166px;
+        }
+        .auto-style10 {
+            width: 166px;
+        }
+        .auto-style11 {
+            width: 166px;
+            height: 31px;
+        }
     </style>
-</head>
-<body>
+
     <form id="form1" runat="server">
-    <div>
     
-        Mika&#39;s Salary Calculation<br />
     
-    </div>
-        <table class="auto-style1">
+       <h1 class="title">Mika&#39;s Salary Calculation</h1>
+       
+         <br />
+    
+   
+        <table class="table">
             <tr>
                 <td class="auto-style7">Hourly Wage:</td>
                 <td class="auto-style8">
-                    <asp:TextBox ID="wage" runat="server" Width="58px"></asp:TextBox>
+                    <asp:TextBox ID="wage" runat="server" Width="65px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">Numbers of Hours:</td>
-                <td class="auto-style2">
-                    <asp:TextBox ID="hours" runat="server" Width="59px"></asp:TextBox>
+                <td class="auto-style9">
+                    <asp:TextBox ID="hours" runat="server" Width="65px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Gross Pay:</td>
-                <td>
+                <td class="auto-style10">
                     <asp:Label ID="gross" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">Pre-tax Deduction:</td>
-                <td class="auto-style2">
-                    <asp:TextBox ID="pretaxdedcution" runat="server" Width="56px"></asp:TextBox>
+                <td class="auto-style9">
+                    <asp:TextBox ID="pretaxdedcution" runat="server" Width="65px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Pre-tax Income</td>
-                <td>
+                <td class="auto-style10">
                     <asp:Label ID="PreTaxIncome" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style5">After tax Income:</td>
-                <td class="auto-style6">
+                <td class="auto-style11">
                     <asp:Label ID="AfterTaxIncome" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">After tax deduction:</td>
-                <td>
-                    <asp:TextBox ID="aftertaxdedction" runat="server" Width="54px"></asp:TextBox>
+                <td class="auto-style10">
+                    <asp:TextBox ID="aftertaxdedction" runat="server" Width="65px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">Net Pay</td>
-                <td>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style10">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Your Weekly Net Pay:</td>
+                <td class="auto-style10">
                     <asp:Label ID="NetPay" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style10">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+        <asp:Button ID="btn_clear" runat="server" Text="Clear" Width="65px" />
+                </td>
+                <td class="auto-style10">
+        <asp:Button ID="lbl_calculate" runat="server" Text="Calculate" Width="70px" />
                 </td>
             </tr>
         </table>
         <br />
-        <asp:Button ID="lbl_calculate" runat="server" Text="Calculate" />
-&nbsp;&nbsp;
-        <asp:Button ID="btn_clear" runat="server" Text="Clear" Width="65px" />
-        <br />
-    </form>
+        &nbsp;</form>
 </body>
 </html>
